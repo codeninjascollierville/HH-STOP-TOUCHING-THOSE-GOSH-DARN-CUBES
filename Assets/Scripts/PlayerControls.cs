@@ -5,6 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class PlayerControls : MonoBehaviour
 {
+    void OnCollisionEnter(Collision collision)
+    {
+        SceneManager.LoadScene(0);
+
+
+    }
+
+
+
 [Header("RigidBody")]
 public Rigidbody rb;
 
